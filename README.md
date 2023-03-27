@@ -1,6 +1,6 @@
 # Weight Tracker
 
-Weight tracker app for you to track weights day by day.
+Weight tracker app for you to track your weights day by day.
 
 ## [See Website](https://emirbuckun.github.io/weight-tracker/)
 
