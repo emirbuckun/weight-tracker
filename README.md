@@ -2,7 +2,7 @@
 
 Weight tracker app for you to track weights day by day.
 
-## [See Website](https://emirbuckun.github.io/rock-paper-scissors/)
+## [See Website](https://emirbuckun.github.io/weight-tracker/)
 
 ## Run
 
@@ -10,7 +10,7 @@ Clone the project
 
 ```bash
 
-git clone https://github.com/emirbuckun/rock-paper-scissors.git
+git clone https://github.com/emirbuckun/weight-tracker.git
 
 ```
 
@@ -18,7 +18,7 @@ Go to the project directory
 
 ```bash
 
-cd rock-paper-scissors
+cd weight-tracker
 
 ```
 
