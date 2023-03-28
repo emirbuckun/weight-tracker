@@ -17,8 +17,8 @@ const WeightList = () => {
       return;
     }
     localStorage.setItem("localWeights", JSON.stringify([weight, ...weights]));
-    const newTodos = [weight, ...weights];
-    setWeights(newTodos);
+    const newWeights = [weight, ...weights];
+    setWeights(newWeights);
   };
 
   const removeWeight = (id) => {
