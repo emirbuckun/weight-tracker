@@ -37,7 +37,7 @@ const WeightForm = (props) => {
         onChange={(e) => setInput(e.target.value)}
         ref={inputRef}
       />
-      <button className="add-button"></button>
+      <button className="add-button">Add</button>
     </form>
   );
 };
