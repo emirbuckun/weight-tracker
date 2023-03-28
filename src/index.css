@@ -8,7 +8,7 @@
 
 :root {
   --color-bg: #1f1f38;
-  --color-bg-todo: #161a2b;
+  --color-bg-weight: #161a2b;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -32,4 +32,121 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.weight-tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: var(--color-bg-weight);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 15px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px auto;
+  color: var(--color-white);
+  font-size: 25px;
+}
+
+.weight-form {
+  margin-bottom: 12px;
+}
+
+.weight-input {
+  padding: 16px 32px 16px 16px;
+  border-radius: 10px;
+  border: 2px solid var(--color-primary);
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: var(--color-white);
+}
+
+.weight-input::placeholder {
+  color: var(--color-light);
+}
+
+.add-button {
+  margin-left: 5px;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: capitalize;
+  color: var(--color-white);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-primary-variant) 100%
+  );
+}
+
+.delete-button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 15px;
+  margin-right: 5px;
+  border: none;
+  background: transparent;
+}
+
+.weight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: var(--color-white);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 12px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.weight-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.weight-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.weight-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+  .todo-app {
+    width: auto;
+    margin: 64px 32px auto 32px;
+    min-height: 500px;
+  }
+
+  .todo-input {
+    width: auto;
+  }
 }
