@@ -140,7 +140,7 @@ h1 {
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
-  .weight-app {
+  .weight-tracker {
     width: auto;
     margin: 64px 32px auto 32px;
     min-height: 500px;
