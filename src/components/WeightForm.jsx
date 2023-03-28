@@ -20,7 +20,7 @@ const WeightForm = (props) => {
     e.preventDefault();
     props.onSubmit({
       id: getId(),
-      date: new Date().getTime(),
+      date: new Date().toLocaleDateString(),
       text: input,
     });
     setInput("");
